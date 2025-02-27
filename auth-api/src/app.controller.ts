@@ -3,16 +3,16 @@ import { AppService } from './app.service';
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) { }
+  constructor(private readonly appService: AppService) {}
 
   // POST /login
-  @Post("login")
+  @Post('login')
   login(): any {
-    return {}
+    return {};
   }
 
   // GET /protected
-  @Get("protected")
+  @Get('protected')
   getHello(): string {
     return this.appService.getHello();
   }
