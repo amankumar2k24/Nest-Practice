@@ -8,7 +8,7 @@ npm i --save @nestjs/passport passport passport-local
 npm i --save-dev @types/passport-local
 
 <!-- Auth Creation -->
-created AUTH module and service by command - nest g module auth and nest g service auth
+Created AUTH module and service by command - nest g module auth and nest g service auth
 
 From USERS module i am exporting   ""exports: [UsersService]""    to     AUTH module , here i am importing   ""imports: [UsersModule]"",
 
@@ -27,4 +27,6 @@ In local strategy
 In Auth module 0
    - i have added LocalStrategy in providers array and 
    - i have added PassportModule in imports array
+
+Created local-authGuard and added it in app.controller by using @UseGuards(LocalAuthGuard)
 

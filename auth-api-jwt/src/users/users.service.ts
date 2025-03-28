@@ -6,6 +6,7 @@ export type User = {
   email: string;
   password: string;
 };
+
 @Injectable()
 export class UsersService {
   private readonly users: User[] = [
@@ -13,7 +14,7 @@ export class UsersService {
       id: 1,
       username: 'Aman Kumar',
       email: 'aman@gmail.com',
-      password: 'Aman123',
+      password: 'Aman@123',
     },
     {
       id: 2,
